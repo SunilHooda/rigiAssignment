@@ -379,12 +379,12 @@ header {
   padding-top: 80px;
 }
 
-#aboutMeSection > p {
+.sectionHeading {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-#aboutMeSection > div > h2 {
+.sectionDesc {
   font-size: 30px;
   line-height: 1.2;
   text-align: center;
@@ -431,17 +431,18 @@ header {
 .socialIcons > img {
   width: 35px;
   height: 35px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
-  #aboutMeSection > div > h2 {
+  .sectionDesc {
     font-size: 27px;
     word-spacing: 1.4;
     text-wrap: wrap;
   }
 
   .roundImg {
-    width: 95%;
+    width: 90%;
     border-radius: 50%;
     background-color: white;
     padding: 20px;
@@ -480,5 +481,707 @@ header {
   .socialIcons > img {
     width: 40px;
     height: 40px;
+  }
+}
+
+/* Service Section 487 - */
+#serviceSection {
+  width: 100%;
+  height: auto;
+  background-color: #e9eef3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 80px;
+}
+
+.tabs {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 15px 0;
+}
+
+.sectionBtn {
+  width: 20%;
+  border-radius: 20px;
+  padding: 12px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  border: 2px solid lightgray;
+}
+
+.activeBtn {
+  background-color: #4169e1;
+  color: white;
+  border: 2px solid white;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.community {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 40px;
+}
+
+.commDesc {
+  width: 100%;
+  height: auto;
+  line-height: 1.5;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.commDesc > div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.commDesc > div > h1 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.commDesc > div > p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.commDesc > div > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  list-style: none;
+  text-align: left;
+}
+
+.commDesc > div > ul > li:before {
+  content: "✓";
+}
+
+.commDesc div button {
+  width: 70%;
+  display: block;
+  font-size: 18px;
+  padding: 12px 40px;
+  border-radius: 50px;
+  margin: 0 5px;
+  background-color: #4169e1;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.ownerImg {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ownerImg > div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ownerImg > div > img {
+  width: 80%;
+  height: 500px;
+  padding: 20px;
+  border-radius: 25px;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+}
+
+.courses {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 40px;
+}
+
+.card {
+  background-color: white;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 1rem;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card > h3,
+p {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.card > p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.card > button {
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  background-color: #4169e1;
+  color: white;
+  font-size: 17px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.consult {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 40px;
+}
+
+.call {
+  width: 40px;
+  height: 40px;
+}
+
+.call > img {
+  width: 40px;
+  height: 40px;
+  background-color: #e9eef3;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.info {
+  display: flex;
+}
+
+.info div {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .tabs {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 5px;
+  }
+
+  .sectionBtn {
+    width: 60%;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    border: 2px solid lightgray;
+  }
+
+  .activeBtn {
+    background-color: #4169e1;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .section {
+    display: none;
+  }
+
+  .section.active {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .community {
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 0;
+    gap: 10px;
+    margin: auto;
+  }
+
+  .commDesc > div {
+    width: 100%;
+  }
+
+  .commDesc > div > h1 {
+    font-size: 30px;
+  }
+
+  .commDesc > div > p {
+    font-size: 17px;
+    line-height: 1.5;
+    word-spacing: 1.2;
+  }
+
+  .commDesc div button {
+    display: none;
+  }
+
+  .ownerImg > div > img {
+    width: 100%;
+    height: 450px;
+    padding: 20px;
+    border-radius: 25px;
+    background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  }
+
+  .courses,
+  .consult {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .card > p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+}
+
+#testimonalSection {
+  width: 100%;
+  height: auto;
+  background-color: #e9eef3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 80px;
+  margin: auto;
+}
+
+.testimonals {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.testCard {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+.testCard > p {
+  width: 100%;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.testCard > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.testCard > div:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.testCard > div > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.testCard > div > p {
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonals {
+    width: 90%;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+}
+
+#mediaSection {
+  width: 100%;
+  height: auto;
+  background-color: #e9eef3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 80px;
+  margin: auto;
+}
+
+.videoDiv {
+  width: 75%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .videoDiv {
+    width: 90%;
+  }
+}
+
+#getAppSection {
+  width: 100%;
+  height: auto;
+  background-color: #e9eef3;
+  padding-top: 80px;
+  margin: auto;
+}
+
+#getAppSection > div {
+  width: 100%;
+  height: auto;
+  background-color: #4169e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin: auto;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  color: white;
+}
+
+#getAppSection > div > h1 {
+  width: 45%;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.5;
+  word-spacing: 1.5;
+}
+
+.deskBtn {
+  width: 20%;
+  display: block;
+  font-size: 18px;
+  padding: 12px 40px;
+  border-radius: 50px;
+  margin: 0 5px;
+  color: #4169e1;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  font-weight: 500;
+}
+
+.mobileBtn {
+  display: none;
+}
+
+.deviceImg {
+  width: 100%;
+  display: flex;
+  justify-content: last baseline;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.deviceImg > div:nth-child(1) {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.deviceImg > div:nth-child(2) {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.deviceImg > div:nth-child(1) > img {
+  width: 55%;
+  height: 100%;
+}
+
+.deviceImg > div:nth-child(2) > img {
+  width: 70%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #getAppSection > div {
+    padding-top: 40px;
+  }
+
+  #getAppSection > div > h1 {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+  }
+  .deskBtn {
+    display: none;
+  }
+
+  .mobileBtn {
+    width: 80%;
+    display: block;
+    font-size: 18px;
+    padding: 12px 40px;
+    border-radius: 50px;
+    margin: 0 5px;
+    color: #4169e1;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 500;
+  }
+
+  .deviceImg {
+    margin-bottom: 20px;
+  }
+
+  .deviceImg > div:nth-child(1) {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .deviceImg > div:nth-child(2) {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .deviceImg > div:nth-child(1) > img {
+    width: 70%;
+    height: 100%;
+  }
+
+  .deviceImg > div:nth-child(2) > img {
+    width: 90%;
+    height: 100%;
+  }
+}
+
+#contactSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 80px;
+  margin: auto;
+}
+
+.contactDetails {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.contactCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.mediaImg {
+  background-color: #e9eef3;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mediaImg > img {
+  width: 25px;
+  height: 25px;
+}
+
+.contactCard > div:nth-child(2) {
+  width: 100%;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.contactCard > div:nth-child(2) > p {
+  width: 100%;
+  margin: 0 0 5px 0;
+  color: darkgray;
+}
+
+.contactCard > div:nth-child(2) > a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .contactDetails {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  #contactSection > div > h2 {
+    width: 80%;
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
+  }
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4169e1;
+  color: white;
+  padding: 40px 0;
+  gap: 30px;
+}
+
+#footer > div {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#footer > div:nth-child(2) > img {
+  width: 40px;
+  height: 40px;
+}
+
+#footer > div:nth-child(3) > img {
+  width: 200px;
+  height: 60px;
+}
+
+hr {
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  #footer > div:nth-child(3) > img {
+    width: 140px;
+    height: 40px;
+  }
+
+  #footer > div:nth-child(4) {
+    width: 100%;
+    flex-direction: column;
   }
 }
